@@ -1,0 +1,219 @@
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+
+.TopNavbar {
+  background-color: #0c4b35;
+  color: white;
+  padding: 20px 20px 15px 20px;
+}
+.TopNavbar .TNavbar-content {
+  display: flex;
+  justify-content: space-between;
+}
+.TopNavbar .TNavbar-content span {
+  display: flex;
+}
+.TopNavbar .TNavbar-content span .email {
+  background-image: url("./icons/email-1.svg");
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 20px;
+  background-size: contain;
+}
+.TopNavbar .TNavbar-content span .phone-call {
+  background-image: url("./icons/phone-call-1.svg");
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 20px;
+  background-size: contain;
+}
+.TopNavbar .TNavbar-content span .location {
+  background-image: url("./icons/location-1.svg");
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 20px;
+  background-size: contain;
+}
+.TopNavbar .TNavbar-content span p {
+  display: none;
+}
+.TopNavbar .TNavbar-content p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.TopNavbar .TNavbar-content p .downbarW {
+  background-image: url("./icons/down-arrow-white.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 7px;
+  height: 3.818px;
+  margin-left: 5px;
+}
+
+.Navbar {
+  padding: 15px;
+}
+.Navbar .Navbar-content {
+  display: flex;
+  justify-content: space-between;
+}
+.Navbar .Nb-content-text {
+  display: none;
+}
+.Navbar .Nb-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navbar .Nb-buttons button {
+  background-color: #00730c;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 0;
+  width: 40px;
+  margin-right: 40px;
+}
+.Navbar .Nb-buttons button .phone {
+  background-image: url("./icons/phone.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+.Navbar .Nb-buttons button span {
+  display: none;
+}
+.Navbar .Nb-buttons .menuM {
+  background-image: url("./icons/menu-1.svg");
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  margin: 0;
+}
+
+@media (min-width: 1410px) {
+  .TopNavbar {
+    background-color: #0c4b35;
+    color: white;
+    padding: 17px 251px;
+  }
+  .TopNavbar .TNavbar-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .TopNavbar .TNavbar-content span {
+    display: flex;
+  }
+  .TopNavbar .TNavbar-content span .email {
+    background-image: url("./icons/email-1.svg");
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-right: 10px;
+  }
+  .TopNavbar .TNavbar-content span .phone-call {
+    background-image: url("./icons/phone-call-1.svg");
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-right: 10px;
+  }
+  .TopNavbar .TNavbar-content span .location {
+    background-image: url("./icons/location-1.svg");
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-right: 10px;
+  }
+  .TopNavbar .TNavbar-content span p {
+    display: flex;
+    margin-right: 30px;
+  }
+  .TopNavbar .TNavbar-content p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  .TopNavbar .TNavbar-content p .downbarW {
+    background-image: url("./icons/down-arrow-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 7px;
+    height: 3.818px;
+    margin-left: 5px;
+  }
+  .Navbar {
+    padding: 15px 256px;
+  }
+  .Navbar .Nb-content-text {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+  }
+  .Navbar .Nb-content-text span {
+    display: flex;
+    align-items: center;
+    margin-right: 44px;
+  }
+  .Navbar .Nb-content-text span a {
+    text-decoration: none;
+    color: #212529;
+  }
+  .Navbar .Nb-content-text span .NBarrowdown {
+    background-image: url("./icons/arrow-icon-black.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 12px;
+    height: 6.84px;
+    margin-left: 5px;
+  }
+  .Navbar .Nb-content-text span:hover a {
+    color: #00730c;
+  }
+  .Navbar .Nb-content-text span:hover .NBarrowdown {
+    background-image: url("./icons/arrow-icon-green.svg");
+  }
+  .Navbar .Nb-buttons {
+    display: block;
+  }
+  .Navbar .Nb-buttons button {
+    background-color: #00730c;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 35px;
+    width: 170px;
+    font-size: 18px;
+    margin: 0;
+  }
+  .Navbar .Nb-buttons button .phone {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .Navbar .Nb-buttons button span {
+    display: block;
+  }
+  .Navbar .Nb-buttons .menuM {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
