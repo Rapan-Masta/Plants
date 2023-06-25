@@ -138,9 +138,129 @@ a {
 }
 
 .PL-Solution {
-  background-color: #00730c;
+  width: 100%;
   margin: 0;
-  height: 500px;
+}
+
+.picture1Mob {
+  width: 100%;
+  height: auto;
+}
+.picture1Mob img {
+  width: 100%;
+  height: auto;
+}
+
+.SolutionMob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SolutionMob-content {
+  padding: 45px 0 35px 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.landscape {
+  display: flex;
+}
+.landscape p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.logo-vector {
+  background-image: url("./icons/Vector.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 23.799px;
+  height: 19.895px;
+  margin-right: 5px;
+}
+
+.solution-green {
+  margin: 10px 0 15px 0;
+}
+.solution-green span {
+  color: #00730c;
+}
+
+.solution-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+  color: #212529;
+  margin-bottom: 40px;
+}
+
+.button-Quate {
+  background-color: #00730c;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-family: Nunito;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 12px 105px;
+  width: 90%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.how-it-works {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.how-it-works p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #00730c;
+}
+
+.arrow-right {
+  background-image: url("./icons/arrow-icon-right-green.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 12.649px;
+  margin-left: 10px;
+}
+
+.solution-stats {
+  display: flex;
+  align-self: end;
+  justify-content: space-around;
+  width: 85%;
+}
+
+.solution-stats-style {
+  font-size: 10px;
+  display: flex;
+  padding: 8px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
+  width: 100%;
+  margin-right: 10px;
+}
+.solution-stats-style:last-child {
+  margin-right: 0;
+}
+.solution-stats-style span {
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.SolutionPC {
+  display: none;
 }
 
 @media (min-width: 1410px) {
