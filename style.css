@@ -1,21 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   margin: 0;
 }
 
-.TopNavbar {
-  background-color: #0c4b35;
-  color: white;
-  padding: 20px 20px 15px 20px;
+p {
+  margin: 0;
 }
-.TopNavbar .TNavbar-content {
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.TopNavbar {
+  margin: 0;
+  width: auto;
+  background-color: #0c4b35;
+  padding: 20px;
+}
+
+.TNavbar-content {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  width: auto;
 }
-.TopNavbar .TNavbar-content span {
+.TNavbar-content p {
+  color: white;
+  font-size: 12px;
+}
+
+.TNavbar-rightside {
+  display: flex;
+  align-items: center;
+}
+
+.down-arrow-white {
+  background-image: url("./icons/down-arrow-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7px;
+  height: 3.818px;
+  margin-left: 5px;
+}
+
+.TNavbar-leftside {
   display: flex;
 }
-.TopNavbar .TNavbar-content span .email {
+.TNavbar-leftside div {
+  display: flex;
+}
+.TNavbar-leftside p {
+  display: none;
+}
+
+.email {
   background-image: url("./icons/email-1.svg");
   width: 20px;
   height: 20px;
@@ -23,7 +66,8 @@ body {
   margin-right: 20px;
   background-size: contain;
 }
-.TopNavbar .TNavbar-content span .phone-call {
+
+.phone-call {
   background-image: url("./icons/phone-call-1.svg");
   width: 20px;
   height: 20px;
@@ -31,7 +75,8 @@ body {
   margin-right: 20px;
   background-size: contain;
 }
-.TopNavbar .TNavbar-content span .location {
+
+.location {
   background-image: url("./icons/location-1.svg");
   width: 20px;
   height: 20px;
@@ -39,181 +84,170 @@ body {
   margin-right: 20px;
   background-size: contain;
 }
-.TopNavbar .TNavbar-content span p {
-  display: none;
-}
-.TopNavbar .TNavbar-content p {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-}
-.TopNavbar .TNavbar-content p .downbarW {
-  background-image: url("./icons/down-arrow-white.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
-  width: 7px;
-  height: 3.818px;
-  margin-left: 5px;
-}
 
 .Navbar {
+  margin: 0;
+  width: auto;
   padding: 15px;
 }
-.Navbar .Navbar-content {
+
+.Navbar-content {
   display: flex;
   justify-content: space-between;
+  height: 40px;
 }
-.Navbar .Nb-content-text {
+
+.Nb-content-text {
   display: none;
 }
-.Navbar .Nb-buttons {
+
+.Nb-buttons {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-.Navbar .Nb-buttons button {
+
+.call-us {
+  display: flex;
   background-color: #00730c;
   color: white;
   border-radius: 10px;
   border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 7px 0;
-  width: 40px;
+  border: 10px solid #00730c;
   margin-right: 40px;
 }
-.Navbar .Nb-buttons button .phone {
+.call-us p {
+  display: none;
+}
+
+.phone-icon {
   background-image: url("./icons/phone.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
   width: 20px;
   height: 20px;
 }
-.Navbar .Nb-buttons button span {
-  display: none;
-}
-.Navbar .Nb-buttons .menuM {
+
+.menuM {
   background-image: url("./icons/menu-1.svg");
-  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 30px;
-  background-color: white;
+  height: 30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.PL-Solution {
+  background-color: #00730c;
   margin: 0;
+  height: 500px;
 }
 
 @media (min-width: 1410px) {
   .TopNavbar {
-    background-color: #0c4b35;
-    color: white;
-    padding: 17px 251px;
-  }
-  .TopNavbar .TNavbar-content {
-    display: flex;
-    justify-content: space-between;
-  }
-  .TopNavbar .TNavbar-content span {
-    display: flex;
-  }
-  .TopNavbar .TNavbar-content span .email {
-    background-image: url("./icons/email-1.svg");
-    width: 25px;
-    height: 25px;
-    display: block;
-    margin-right: 10px;
-  }
-  .TopNavbar .TNavbar-content span .phone-call {
-    background-image: url("./icons/phone-call-1.svg");
-    width: 25px;
-    height: 25px;
-    display: block;
-    margin-right: 10px;
-  }
-  .TopNavbar .TNavbar-content span .location {
-    background-image: url("./icons/location-1.svg");
-    width: 25px;
-    height: 25px;
-    display: block;
-    margin-right: 10px;
-  }
-  .TopNavbar .TNavbar-content span p {
-    display: flex;
-    margin-right: 30px;
-  }
-  .TopNavbar .TNavbar-content p {
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    padding: 17.5px 0;
   }
-  .TopNavbar .TNavbar-content p .downbarW {
-    background-image: url("./icons/down-arrow-white.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+  .TNavbar-content {
+    width: 80%;
+  }
+  .TNavbar-content p {
+    color: white;
+    font-size: 14px;
+  }
+  .TNavbar-leftside div {
+    align-items: center;
+  }
+  .TNavbar-leftside p {
     display: block;
-    width: 7px;
-    height: 3.818px;
-    margin-left: 5px;
+    margin-right: 30px;
+  }
+  .email {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-right: 10px;
+  }
+  .phone-call {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-right: 10px;
+  }
+  .location {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-right: 10px;
   }
   .Navbar {
-    padding: 15px 256px;
-  }
-  .Navbar .Nb-content-text {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-  }
-  .Navbar .Nb-content-text span {
     display: flex;
     align-items: center;
-    margin-right: 44px;
+    justify-content: center;
   }
-  .Navbar .Nb-content-text span a {
-    text-decoration: none;
-    color: #212529;
+  .Navbar-content {
+    width: 80%;
+    height: 55px;
+    align-items: center;
   }
-  .Navbar .Nb-content-text span .NBarrowdown {
+  .Navbar-LOGO img {
+    width: 120px;
+    height: 55px;
+    display: block;
+  }
+  .Navbar-content-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+  }
+  .Nb-content-text {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 10%;
+  }
+  .Nb-content-text div {
+    display: flex;
+    align-items: center;
+  }
+  .down-arrow-black {
     background-image: url("./icons/arrow-icon-black.svg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: contain;
-    display: block;
     width: 12px;
     height: 6.84px;
     margin-left: 5px;
   }
-  .Navbar .Nb-content-text span:hover a {
-    color: #00730c;
-  }
-  .Navbar .Nb-content-text span:hover .NBarrowdown {
-    background-image: url("./icons/arrow-icon-green.svg");
-  }
-  .Navbar .Nb-buttons {
-    display: block;
-  }
-  .Navbar .Nb-buttons button {
+  .call-us {
+    font-family: Nunito;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #00730c;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
-    padding: 10px 35px;
-    width: 170px;
-    font-size: 18px;
+    width: 171px;
     margin: 0;
+    padding: 10px 35px;
   }
-  .Navbar .Nb-buttons button .phone {
+  .call-us p {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 10px;
+  }
+  .phone-icon {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
   }
-  .Navbar .Nb-buttons button span {
-    display: block;
-  }
-  .Navbar .Nb-buttons .menuM {
+  .menuM {
     display: none;
+    position: absolute;
   }
 }/*# sourceMappingURL=style.css.map */

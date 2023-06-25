@@ -23,6 +23,13 @@ $background-green-text: #00730c;
   border: none;
 }
 
+@mixin button-standartPC {
+  background-color: $background-green-text;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
 @mixin textStandartPC {
   font-size: 18px;
   line-height: 30px;
@@ -35,114 +42,147 @@ $background-green-text: #00730c;
   color: #676767;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 //------------------
 // <1410px - mobile
 //------------------
+
+// -----------TopNavbar-------------
 .TopNavbar {
+  margin: 0;
+  width: auto;
   background-color: #0c4b35;
-  color: white;
-  padding: 20px 20px 15px 20px;
+  padding: 20px;
+}
 
-  .TNavbar-content {
-    display: flex;
-    justify-content: space-between;
+.TNavbar-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: auto;
 
-    span {
-      display: flex;
-
-      .email {
-        background-image: url("./icons/email-1.svg");
-        @include iconSizeM();
-      }
-
-      .phone-call {
-        background-image: url("./icons/phone-call-1.svg");
-
-        @include iconSizeM();
-      }
-
-      .location {
-        background-image: url("./icons/location-1.svg");
-        @include iconSizeM();
-      }
-
-      p {
-        display: none;
-      }
-    }
-
-    p {
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 12px;
-
-      .downbarW {
-        background-image: url("./icons/down-arrow-white.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: block;
-        width: 7px;
-        height: 3.818px;
-        margin-left: 5px;
-      }
-    }
+  p {
+    color: white;
+    font-size: 12px;
   }
 }
 
-.Navbar {
-  padding: 15px;
+.TNavbar-rightside {
+  display: flex;
+  align-items: center;
+}
 
-  .Navbar-content {
+.down-arrow-white {
+  background-image: url("./icons/down-arrow-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7px;
+  height: 3.818px;
+  margin-left: 5px;
+}
+
+.TNavbar-leftside {
+  display: flex;
+
+  div {
     display: flex;
-    justify-content: space-between;
   }
-  .Nb-content-text {
+
+  p {
     display: none;
   }
+}
 
-  .Nb-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.email {
+  background-image: url("./icons/email-1.svg");
+  @include iconSizeM();
+}
 
-    button {
-      @include button-standartM;
+.phone-call {
+  background-image: url("./icons/phone-call-1.svg");
+  @include iconSizeM();
+}
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 7px 0;
-      width: 40px;
-      margin-right: 40px;
+.location {
+  background-image: url("./icons/location-1.svg");
+  @include iconSizeM();
+}
+// -----------------------------------
+// -------------Navbar----------------
 
-      .phone {
-        background-image: url("./icons/phone.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 20px;
-        height: 20px;
-      }
+.Navbar {
+  margin: 0;
+  width: auto;
+  padding: 15px;
+}
 
-      span {
-        display: none;
-      }
-    }
-    .menuM {
-      background-image: url("./icons/menu-1.svg");
-      height: 30px;
-      width: 30px;
-      background-color: white;
-      margin: 0;
-    }
+.Navbar-content {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.Nb-content-text {
+  display: none;
+}
+
+.Nb-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.call-us {
+  display: flex;
+
+  @include button-standartM;
+
+  border: 10px solid #00730c;
+  margin-right: 40px;
+
+  p {
+    display: none;
   }
+}
+
+.phone-icon {
+  background-image: url("./icons/phone.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.menuM {
+  background-image: url("./icons/menu-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+// ----------PL-Solution-------------
+.PL-Solution {
+  background-color: #00730c;
+  margin: 0;
+  height: 500px;
 }
 
 //------------------
@@ -150,123 +190,122 @@ body {
 //------------------
 @media (min-width: 1410px) {
   .TopNavbar {
-    background-color: #0c4b35;
-    color: white;
-    padding: 17px 251px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17.5px 0;
+  }
 
-    .TNavbar-content {
-      display: flex;
-      justify-content: space-between;
+  .TNavbar-content {
+    width: 80%;
 
-      span {
-        display: flex;
-
-        .email {
-          background-image: url("./icons/email-1.svg");
-          @include iconSizePC();
-        }
-
-        .phone-call {
-          background-image: url("./icons/phone-call-1.svg");
-
-          @include iconSizePC();
-        }
-
-        .location {
-          background-image: url("./icons/location-1.svg");
-          @include iconSizePC();
-        }
-
-        p {
-          display: flex;
-          margin-right: 30px;
-        }
-      }
-
-      p {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-
-        .downbarW {
-          background-image: url("./icons/down-arrow-white.svg");
-          background-size: contain;
-          background-repeat: no-repeat;
-          display: block;
-          width: 7px;
-          height: 3.818px;
-          margin-left: 5px;
-        }
-      }
+    p {
+      color: white;
+      font-size: 14px;
     }
   }
+
+  .TNavbar-leftside {
+    div {
+      align-items: center;
+    }
+    p {
+      display: block;
+      margin-right: 30px;
+    }
+  }
+
+  .email {
+    @include iconSizePC();
+  }
+
+  .phone-call {
+    @include iconSizePC();
+  }
+
+  .location {
+    @include iconSizePC();
+  }
+
+  // -----------------------------------
+  // -------------Navbar----------------
 
   .Navbar {
-    padding: 15px 256px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .Nb-content-text {
-      display: flex;
-      justify-content: space-between;
-      align-self: center;
+  .Navbar-content {
+    width: 80%;
+    height: 55px;
+    align-items: center;
+  }
 
-      span {
-        display: flex;
-        align-items: center;
-        margin-right: 44px;
-
-        a {
-          text-decoration: none;
-          color: #212529;
-        }
-
-        .NBarrowdown {
-          background-image: url("./icons/arrow-icon-black.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: contain;
-          display: block;
-          width: 12px;
-          height: 6.84px;
-          margin-left: 5px;
-        }
-        &:hover {
-          a {
-            color: #00730c;
-          }
-          .NBarrowdown {
-            background-image: url("./icons/arrow-icon-green.svg");
-          }
-        }
-      }
-    }
-
-    .Nb-buttons {
+  .Navbar-LOGO {
+    img {
+      width: 120px;
+      height: 55px;
       display: block;
-
-      button {
-        @include button-standartM;
-
-        padding: 10px 35px;
-        width: 170px;
-        font-size: 18px;
-        margin: 0;
-
-        .phone {
-          width: 30px;
-          height: 30px;
-          margin-right: 10px;
-        }
-
-        span {
-          display: block;
-        }
-      }
-
-      .menuM {
-        display: none;
-      }
     }
   }
+
+  .Navbar-content-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+  }
+
+  .Nb-content-text {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 10%;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .down-arrow-black {
+    background-image: url("./icons/arrow-icon-black.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 6.84px;
+    margin-left: 5px;
+  }
+
+  .call-us {
+    font-family: Nunito;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include button-standartPC;
+    width: 171px;
+    margin: 0;
+    padding: 10px 35px;
+
+    p {
+      display: block;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      margin-left: 10px;
+    }
+  }
+
+  .phone-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menuM {
+    display: none;
+    position: absolute;
+  }
+  // -------------------------------------------
 }
