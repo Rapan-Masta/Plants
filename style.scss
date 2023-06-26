@@ -184,6 +184,13 @@ a {
   margin: 0;
 }
 
+.SolutionMob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to top right, #00730c6a, #fbf6ee);
+}
+
 .picture1Mob {
   width: 100%;
   height: auto;
@@ -192,12 +199,6 @@ a {
     width: 100%;
     height: auto;
   }
-}
-
-.SolutionMob {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .SolutionMob-content {
@@ -307,6 +308,135 @@ a {
 }
 
 //------------------
+// >768
+//------------------
+@media (min-width: 768px) {
+  // ----------PL-Solution-PC-------------
+
+  .SolutionMob {
+    display: none;
+  }
+
+  .SolutionPC-space {
+    width: 25%;
+  }
+
+  .SolutionPC {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to top right, #00730c6a, #fbf6ee);
+    height: 720px;
+  }
+
+  .SolutionPC-content {
+    margin: 0;
+    width: 55%;
+    margin-right: 2%;
+  }
+
+  .landscapePC {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .perfect-solutionPC {
+    margin: 20px 0;
+    font-size: 58px;
+    font-weight: 800;
+
+    span {
+      color: #00730c;
+    }
+  }
+
+  .solution-textPC {
+    @include textStandartPC;
+    margin-bottom: 50px;
+  }
+
+  .solution-buttonsPC {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .QuatePC {
+    margin-right: 30px;
+    @include button-standartPC;
+    padding: 13px 35px;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .how-it-worksPC {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 30px;
+      color: #676767;
+    }
+  }
+
+  .arrow-right-grey {
+    background-image: url("./icons/arrow-icon-right-grey.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 15px;
+    width: 20px;
+    height: 15.811px;
+  }
+
+  .solution-statsPC {
+    display: flex;
+  }
+
+  .solution-stats-stylePC {
+    display: flex;
+    align-items: center;
+
+    div {
+      margin-right: 10px;
+      display: flex;
+      padding: 15px 7px;
+      border-radius: 35px;
+      background: linear-gradient(73deg, #00730c89 0%, #f9f9f9 100%);
+    }
+
+    p {
+      color: #212529;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      margin-right: 20px;
+    }
+
+    .lastchild-margin-right {
+      margin-right: 0;
+    }
+  }
+
+  .SolutionPC-picture {
+    height: 720px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  // -------------------------------------------
+}
+
+//------------------
 // >1410 - desktop
 //------------------
 @media (min-width: 1410px) {
@@ -349,7 +479,7 @@ a {
   }
 
   // -----------------------------------
-  // -------------Navbar----------------
+  // -------------Navbar-PC----------------
 
   .Navbar {
     display: flex;

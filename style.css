@@ -142,6 +142,13 @@ a {
   margin: 0;
 }
 
+.SolutionMob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to top right, rgba(0, 115, 12, 0.4156862745), #fbf6ee);
+}
+
 .picture1Mob {
   width: 100%;
   height: auto;
@@ -149,12 +156,6 @@ a {
 .picture1Mob img {
   width: 100%;
   height: auto;
-}
-
-.SolutionMob {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .SolutionMob-content {
@@ -263,6 +264,114 @@ a {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .SolutionMob {
+    display: none;
+  }
+  .SolutionPC-space {
+    width: 25%;
+  }
+  .SolutionPC {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to top right, rgba(0, 115, 12, 0.4156862745), #fbf6ee);
+    height: 720px;
+  }
+  .SolutionPC-content {
+    margin: 0;
+    width: 55%;
+    margin-right: 2%;
+  }
+  .landscapePC {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .perfect-solutionPC {
+    margin: 20px 0;
+    font-size: 58px;
+    font-weight: 800;
+  }
+  .perfect-solutionPC span {
+    color: #00730c;
+  }
+  .solution-textPC {
+    font-size: 18px;
+    line-height: 30px;
+    color: #676767;
+    margin-bottom: 50px;
+  }
+  .solution-buttonsPC {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .QuatePC {
+    margin-right: 30px;
+    background-color: #00730c;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 35px;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .how-it-worksPC {
+    display: flex;
+    align-items: center;
+  }
+  .how-it-worksPC p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #676767;
+  }
+  .arrow-right-grey {
+    background-image: url("./icons/arrow-icon-right-grey.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 15px;
+    width: 20px;
+    height: 15.811px;
+  }
+  .solution-statsPC {
+    display: flex;
+  }
+  .solution-stats-stylePC {
+    display: flex;
+    align-items: center;
+  }
+  .solution-stats-stylePC div {
+    margin-right: 10px;
+    display: flex;
+    padding: 15px 7px;
+    border-radius: 35px;
+    background: linear-gradient(73deg, rgba(0, 115, 12, 0.537254902) 0%, #f9f9f9 100%);
+  }
+  .solution-stats-stylePC p {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-right: 20px;
+  }
+  .solution-stats-stylePC .lastchild-margin-right {
+    margin-right: 0;
+  }
+  .SolutionPC-picture {
+    height: 720px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .SolutionPC-picture img {
+    height: auto;
+    width: 100%;
+  }
+}
 @media (min-width: 1410px) {
   .TopNavbar {
     display: flex;
