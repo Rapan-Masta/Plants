@@ -1,6 +1,3 @@
-$color-green-text: #00730c;
-$background-green-text: #00730c;
-
 @mixin iconSizeM {
   width: 20px;
   height: 20px;
@@ -17,14 +14,14 @@ $background-green-text: #00730c;
 }
 
 @mixin button-standartM {
-  background-color: $background-green-text;
+  background-color: #00730c;
   color: white;
   border-radius: 10px;
   border: none;
 }
 
 @mixin button-standartPC {
-  background-color: $background-green-text;
+  background-color: #00730c;
   color: white;
   border-radius: 5px;
   border: none;
@@ -51,6 +48,12 @@ body {
   margin: 0;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 p {
   margin: 0;
 }
@@ -60,9 +63,10 @@ a {
   color: black;
 }
 
-//------------------
-// <1410px - mobile
-//------------------
+h2,
+h3 {
+  margin: 0;
+}
 
 // -----------TopNavbar-------------
 .TopNavbar {
@@ -184,16 +188,17 @@ a {
   margin: 0;
 }
 
-.SolutionMob {
+.Solution {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(to top right, #00730c6a, #fbf6ee);
 }
 
-.picture1Mob {
+.picture1 {
   width: 100%;
   height: auto;
+  display: flex;
 
   img {
     width: 100%;
@@ -201,7 +206,7 @@ a {
   }
 }
 
-.SolutionMob-content {
+.Solution-content {
   padding: 45px 0 35px 0;
   width: 90%;
   display: flex;
@@ -228,7 +233,8 @@ a {
 
 .solution-green {
   margin: 10px 0 15px 0;
-
+  font-size: 28px;
+  font-weight: 700;
   span {
     color: #00730c;
   }
@@ -238,6 +244,12 @@ a {
   @include textStandartMobile;
   color: #212529;
   margin-bottom: 40px;
+}
+
+.solution-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button-Quate {
@@ -250,6 +262,9 @@ a {
   width: 90%;
   align-self: center;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .how-it-works {
@@ -279,6 +294,7 @@ a {
   align-self: end;
   justify-content: space-around;
   width: 85%;
+  gap: 12px;
 }
 
 .solution-stats-style {
@@ -290,274 +306,134 @@ a {
   border-radius: 32px;
   background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
   width: 100%;
-  margin-right: 10px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  gap: 8px;
 
   span {
     font-size: 12px;
     font-weight: 700;
-    margin-right: 8px;
   }
 }
 
-.SolutionPC {
+.team-members {
   display: none;
 }
 
-//------------------
-// >768
-//------------------
-@media (min-width: 768px) {
-  // ----------PL-Solution-PC-------------
+// ----------------------------
+// -------Services-Provide-----
 
-  .SolutionMob {
-    display: none;
-  }
+.Services-Provide {
+  width: 100%;
+}
 
-  .SolutionPC-space {
-    width: 19%;
-  }
+.provide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
 
-  .SolutionPC {
-    display: flex;
-    align-items: center;
-    background-image: linear-gradient(to top right, #00730c6a, #fbf6ee);
-    height: 720px;
-  }
+.provide-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  width: 100%;
 
-  .SolutionPC-content {
-    margin: 0;
-    width: 55%;
-    margin-right: 2%;
-  }
-
-  .landscapePC {
-    display: flex;
-    font-size: 16px;
+  h2 {
+    font-size: 28px;
     font-weight: 700;
-    line-height: 20px;
-  }
-
-  .perfect-solutionPC {
-    margin: 20px 0;
-    font-size: 58px;
-    font-weight: 800;
 
     span {
       color: #00730c;
     }
   }
 
-  .solution-textPC {
-    @include textStandartPC;
-    margin-bottom: 50px;
+  p {
+    @include textStandartMobile;
   }
-
-  .solution-buttonsPC {
-    display: flex;
-    margin-bottom: 50px;
-  }
-
-  .QuatePC {
-    margin-right: 30px;
-    @include button-standartPC;
-    padding: 13px 35px;
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-  }
-
-  .how-it-worksPC {
-    display: flex;
-    align-items: center;
-
-    p {
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 30px;
-      color: #676767;
-    }
-  }
-
-  .arrow-right-grey {
-    background-image: url("./icons/arrow-icon-right-grey.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 15px;
-    width: 20px;
-    height: 15.811px;
-  }
-
-  .solution-statsPC {
-    display: flex;
-  }
-
-  .solution-stats-stylePC {
-    display: flex;
-    align-items: center;
-
-    div {
-      margin-right: 10px;
-      display: flex;
-      padding: 15px 7px;
-      border-radius: 35px;
-      background: linear-gradient(73deg, #00730c89 0%, #f9f9f9 100%);
-    }
-
-    p {
-      color: #212529;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 20px;
-      margin-right: 20px;
-    }
-
-    .lastchild-margin-right {
-      margin-right: 0;
-    }
-  }
-
-  .SolutionPC-picture {
-    height: 720px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-
-    img {
-      height: auto;
-      width: 100%;
-    }
-  }
-  // -------------------------------------------
 }
+
+.provide-cards-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.provide-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 2px 11px 30px 0px #33333314;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #00730c;
+
+    h3,
+    p {
+      color: white;
+    }
+
+    .provide-icon-green {
+      display: none;
+    }
+
+    .provide-icon-white {
+      display: block;
+    }
+  }
+}
+
+.provide-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  p {
+    @include textStandartMobile;
+  }
+}
+
+@mixin cardsM-style {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+}
+
+.provide-icon {
+  height: 50px;
+}
+
+.provide-icon-green {
+  display: block;
+  @include cardsM-style;
+}
+
+.provide-icon-white {
+  display: none;
+  @include cardsM-style;
+}
+
+//------------------
+// >768 - Table
+//------------------
+@import "./scss/styleTable768.scss";
 
 //------------------
 // >1410 - desktop
 //------------------
-@media (min-width: 1410px) {
-  .TopNavbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 17.5px 0;
-  }
-
-  .TNavbar-content {
-    width: 80%;
-
-    p {
-      color: white;
-      font-size: 14px;
-    }
-  }
-
-  .TNavbar-leftside {
-    div {
-      align-items: center;
-    }
-    p {
-      display: block;
-      margin-right: 30px;
-    }
-  }
-
-  .email {
-    @include iconSizePC();
-  }
-
-  .phone-call {
-    @include iconSizePC();
-  }
-
-  .location {
-    @include iconSizePC();
-  }
-
-  // -----------------------------------
-  // -------------Navbar-PC----------------
-
-  .Navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .Navbar-content {
-    width: 80%;
-    height: 55px;
-    align-items: center;
-  }
-
-  .Navbar-LOGO {
-    img {
-      width: 120px;
-      height: 55px;
-      display: block;
-    }
-  }
-
-  .Navbar-content-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-  }
-
-  .Nb-content-text {
-    display: flex;
-    justify-content: space-around;
-    font-size: 16px;
-    width: 100%;
-    margin-right: 10%;
-
-    div {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  .down-arrow-black {
-    background-image: url("./icons/arrow-icon-black.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 12px;
-    height: 6.84px;
-    margin-left: 5px;
-  }
-
-  .call-us {
-    font-family: Nunito;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include button-standartPC;
-    width: 171px;
-    margin: 0;
-    padding: 10px 35px;
-
-    p {
-      display: block;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 24px;
-      margin-left: 10px;
-    }
-  }
-
-  .phone-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .menuM {
-    display: none;
-    position: absolute;
-  }
-
-  // -------------------------------------------
-}
+@import "./scss/styleLapTop1410.scss";

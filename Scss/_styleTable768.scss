@@ -1,0 +1,86 @@
+@media (min-width: 768px) {
+  .Solution {
+    flex-direction: row-reverse;
+  }
+
+  .Solution-content {
+    padding: 20px 2% 20px 5%;
+  }
+
+  .solution-green {
+    margin: 20px 0;
+  }
+
+  .solution-text {
+    margin-bottom: 50px;
+  }
+
+  .solution-buttons {
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .button-Quate {
+    width: 40%;
+    margin: 0;
+  }
+
+  .how-it-works {
+    margin: 0;
+
+    p {
+      color: #676767;
+    }
+  }
+
+  .arrow-right {
+    background-image: url("./icons/arrow-icon-right-grey.svg");
+  }
+
+  .solution-stats {
+    gap: 10px;
+    align-self: start;
+  }
+
+  .solution-stats-style {
+    border-radius: 0;
+    background: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 0;
+    width: auto;
+
+    span {
+      border-radius: 32px;
+      background: linear-gradient(73deg, #00730c77 0%, #f9f9f9 100%);
+      padding: 15px 7px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  .team-members {
+    display: none;
+  }
+
+  // ----------------------------
+  // -------Services-Provide-----
+
+  .provide-cards-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .provide-card {
+    width: 48%;
+  }
+
+  // -------------------------------------------
+}

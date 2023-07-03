@@ -1,0 +1,254 @@
+@media (min-width: 1410px) {
+  main {
+    gap: 100px;
+  }
+
+  .TopNavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17.5px 0;
+  }
+
+  .TNavbar-content {
+    width: 80%;
+
+    p {
+      color: white;
+      font-size: 14px;
+    }
+  }
+
+  .TNavbar-leftside {
+    div {
+      align-items: center;
+    }
+    p {
+      display: block;
+      margin-right: 30px;
+    }
+  }
+
+  .email {
+    @include iconSizePC();
+  }
+
+  .phone-call {
+    @include iconSizePC();
+  }
+
+  .location {
+    @include iconSizePC();
+  }
+
+  // -----------------------------------
+  // -------------Navbar-PC----------------
+
+  .Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Navbar-content {
+    width: 80%;
+    height: 55px;
+    align-items: center;
+  }
+
+  .Navbar-LOGO {
+    img {
+      width: 120px;
+      height: 55px;
+      display: block;
+    }
+  }
+
+  .Navbar-content-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+  }
+
+  .Nb-content-text {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 10%;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .down-arrow-black {
+    background-image: url("./icons/arrow-icon-black.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 6.84px;
+    margin-left: 5px;
+  }
+
+  .call-us {
+    font-family: Nunito;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include button-standartPC;
+    width: 171px;
+    margin: 0;
+    padding: 10px 35px;
+
+    p {
+      display: block;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      margin-left: 10px;
+    }
+  }
+
+  .phone-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menuM {
+    display: none;
+    position: absolute;
+  }
+
+  // ---------------------------------------
+  //---------------PL-Solution--------------
+
+  .Solution-content {
+    padding: 20px 2% 20px 10%;
+  }
+
+  .landscape {
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+  }
+
+  .solution-green {
+    font-size: 58px;
+    font-weight: 800;
+  }
+
+  .solution-text {
+    @include textStandartPC;
+  }
+
+  .button-Quate {
+    @include button-standartPC;
+    width: 20%;
+  }
+
+  .how-it-works {
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+  }
+
+  .arrow-right {
+    width: 20px;
+    height: 15.811px;
+    margin-left: 15px;
+  }
+
+  .solution-stats {
+    width: 60%;
+    justify-content: space-between;
+  }
+
+  .solution-stats-style {
+    font-size: 16px;
+    padding: 0;
+    width: auto;
+
+    span {
+      border-radius: 32px;
+      background: linear-gradient(73deg, #00730c77 0%, #f9f9f9 100%);
+      font-size: 15px;
+    }
+  }
+
+  .team-members {
+    display: flex;
+  }
+
+  // ----------------------------
+  // -------Services-Provide-----
+
+  .provide-content {
+    width: 80%;
+  }
+
+  .provide-text-block {
+    gap: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+
+    h2 {
+      font-size: 45px;
+      font-weight: 800;
+    }
+
+    p {
+      @include textStandartPC;
+      width: 75%;
+    }
+  }
+
+  .provide-cards-block {
+    gap: 30px;
+  }
+
+  .provide-card {
+    flex-direction: column;
+    text-align: center;
+    width: 23%;
+    gap: 50px;
+    padding: 50px 40px;
+  }
+
+  .provide-card-text {
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    p {
+      @include textStandartMobile;
+    }
+  }
+
+  @mixin cardsPC-style {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+  }
+
+  .provide-icon {
+    height: 70px;
+  }
+  .provide-icon-green {
+    @include cardsPC-style;
+  }
+  .provide-icon-white {
+    @include cardsPC-style;
+  }
+
+  // -------------------------------------------
+}
