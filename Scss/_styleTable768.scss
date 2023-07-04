@@ -82,5 +82,33 @@
     width: 48%;
   }
 
+  //---------------------------------
+  //----------Years-Experience-------
+  .Years-Experience {
+    flex-direction: row;
+  }
+
+  .yExperience-content {
+    justify-content: center;
+  }
+
+  .yExperience-text-block {
+    h3 {
+      text-align: left;
+    }
+  }
+
+  .yExperience-green {
+    background: linear-gradient(90deg, #2aff310a 0%, #bee4c3 100%);
+    flex-direction: column;
+    justify-content: center;
+
+    .picture3 {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
   // -------------------------------------------
 }

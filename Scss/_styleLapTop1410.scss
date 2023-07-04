@@ -250,5 +250,116 @@
     @include cardsPC-style;
   }
 
+  //---------------------------------
+  //----------Years-Experience-------
+  .Years-Experience {
+    width: 80%;
+  }
+
+  .yExperience-content {
+    justify-content: center;
+  }
+
+  .yExperience-text-block {
+    gap: 30px;
+    margin-bottom: 50px;
+
+    h3 {
+      font-size: 45px;
+      font-weight: 800;
+    }
+
+    p {
+      @include textStandartPC;
+    }
+  }
+
+  .yExperience-cards {
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    div {
+      flex-direction: row;
+      gap: 30px;
+      padding: 15px 0 15px 30px;
+      border-radius: 0;
+      box-shadow: none;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .yExperience-button {
+    @include button-standartPC;
+    padding: 13px 35px;
+    font-size: 18px;
+    line-height: 24px;
+    align-self: auto;
+    width: 30%;
+  }
+
+  //-----------------------
+  //-----Why-Choose-Us-----
+
+  .Why-Choose-Us {
+    padding: 100px 0;
+  }
+
+  .us-picture-content {
+    width: 80%;
+    flex-direction: row-reverse;
+    gap: 5%;
+  }
+
+  .us-text-block {
+    text-align: left;
+    gap: 30px;
+    margin-bottom: 50px;
+
+    h3 {
+      font-size: 45px;
+    }
+
+    p {
+      @include textStandartPC;
+      color: white;
+    }
+  }
+
+  .us-bird {
+    justify-content: left;
+    gap: 5%;
+    margin-bottom: 50px;
+
+    div {
+      gap: 20px;
+
+      img {
+        width: 30px;
+      }
+
+      p {
+        align-self: center;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .us-button {
+    @include button-standartPC;
+    padding: 13px 35px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 30%;
+    align-self: flex-start;
+  }
   // -------------------------------------------
 }
