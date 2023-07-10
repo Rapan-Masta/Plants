@@ -361,5 +361,95 @@
     width: 30%;
     align-self: flex-start;
   }
+  //---------------------------------
+  //--------Working-Process----------
+
+  .working-process-content {
+    width: 80%;
+
+    h2 {
+      font-size: 45px;
+      font-weight: 800;
+    }
+
+    span {
+      color: #00730c;
+    }
+
+    p {
+      @include textStandartPC;
+      margin-bottom: 50px;
+      width: 80%;
+    }
+  }
+
+  .WP-cards-block {
+    gap: 30px;
+  }
+
+  .WP-card {
+    padding: 50px 30px 70px 30px;
+    width: 23%;
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      @include textStandartPC;
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
+
+  .card-icons {
+    align-items: center;
+    margin-bottom: 35px;
+
+    p {
+      width: auto;
+      font-family: Nunito;
+      font-size: 78px;
+    }
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  // --------------------------------
+  //--------Reliable-Gardening-------
+
+  .reliable-gardening-content {
+    padding: 0 60px 0 0;
+  }
+
+  .RG-content-blocks {
+    gap: 80px;
+    width: 50%;
+
+    h3 {
+      text-align: left;
+      font-size: 33px;
+    }
+  }
+
+  .RG-button {
+    padding: 10px 35px;
+    width: 40%;
+    height: 50px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .RG-button-icon {
+    width: 30px;
+    height: 30px;
+  }
+
   // -------------------------------------------
 }

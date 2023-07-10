@@ -449,6 +449,7 @@ h3 {
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  justify-content: center;
 }
 .yExperience-cards div {
   display: flex;
@@ -579,6 +580,164 @@ h3 {
   align-self: center;
 }
 
+.Working-Process {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.working-process-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+}
+.working-process-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.working-process-content span {
+  color: #00730c;
+}
+.working-process-content p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.WP-cards-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.WP-card {
+  padding: 20px;
+  box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+  border-radius: 10px;
+  width: 100%;
+}
+.WP-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.WP-card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+  text-align: left;
+}
+.WP-card:hover {
+  background-color: #00730c;
+}
+.WP-card:hover .WP-card-icon-green {
+  display: none;
+}
+.WP-card:hover .WP-card-icon-white {
+  display: block;
+}
+.WP-card:hover h3 {
+  color: white;
+}
+.WP-card:hover p {
+  color: white;
+  opacity: 1;
+}
+
+.card-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.card-icons p {
+  font-size: 45px;
+  font-weight: 800;
+  line-height: normal;
+  color: #e3e3e3;
+  opacity: 0.5;
+}
+.card-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+.WP-card-icon-green {
+  display: block;
+}
+
+.WP-card-icon-white {
+  display: none;
+}
+
+.Reliable-Gardening {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reliable-gardening-content {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("./picture/hand-holding-small-tree-planting-mob.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 225px;
+  border-radius: 5px;
+}
+
+.RG-content-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.RG-content-blocks h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 90%;
+  color: white;
+}
+
+.RG-button {
+  padding: 10px 0;
+  width: 38%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.RG-button p {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 700;
+  color: #00730c;
+}
+
+.RG-button-icon {
+  background-image: url(./icons/phone-green.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
 @media (min-width: 768px) {
   .Solution {
     flex-direction: row-reverse;
@@ -663,6 +822,46 @@ h3 {
     width: 100%;
     height: auto;
     display: block;
+  }
+  .WP-card {
+    width: 48%;
+  }
+  .reliable-gardening-content {
+    background-image: url("./picture/hand-holding-small-tree-planting.png");
+    height: 250px;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 30px;
+  }
+  .RG-content-blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .RG-button {
+    padding: 10px 0;
+    width: 38%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .RG-button p {
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 700;
+    color: #00730c;
+  }
+  .RG-button-icon {
+    background-image: url(./icons/phone-green.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
   }
 }
 @media (min-width: 1410px) {
@@ -976,5 +1175,76 @@ h3 {
     line-height: 24px;
     width: 30%;
     align-self: flex-start;
+  }
+  .working-process-content {
+    width: 80%;
+  }
+  .working-process-content h2 {
+    font-size: 45px;
+    font-weight: 800;
+  }
+  .working-process-content span {
+    color: #00730c;
+  }
+  .working-process-content p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #676767;
+    margin-bottom: 50px;
+    width: 80%;
+  }
+  .WP-cards-block {
+    gap: 30px;
+  }
+  .WP-card {
+    padding: 50px 30px 70px 30px;
+    width: 23%;
+  }
+  .WP-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .WP-card p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #676767;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .card-icons {
+    align-items: center;
+    margin-bottom: 35px;
+  }
+  .card-icons p {
+    width: auto;
+    font-family: Nunito;
+    font-size: 78px;
+  }
+  .card-icons img {
+    width: 70px;
+    height: 70px;
+  }
+  .reliable-gardening-content {
+    padding: 0 60px 0 0;
+  }
+  .RG-content-blocks {
+    gap: 80px;
+    width: 50%;
+  }
+  .RG-content-blocks h3 {
+    text-align: left;
+    font-size: 33px;
+  }
+  .RG-button {
+    padding: 10px 35px;
+    width: 40%;
+    height: 50px;
+  }
+  .RG-button p {
+    font-size: 18px;
+  }
+  .RG-button-icon {
+    width: 30px;
+    height: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

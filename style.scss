@@ -496,6 +496,7 @@ h3 {
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  justify-content: center;
 
   div {
     display: flex;
@@ -628,6 +629,182 @@ h3 {
   width: 50%;
   align-self: center;
 }
+
+//---------------------------------
+//--------Working-Process----------
+.Working-Process {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.working-process-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  span {
+    color: #00730c;
+  }
+
+  p {
+    @include textStandartMobile;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.WP-cards-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.WP-card {
+  padding: 20px;
+  box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+  border-radius: 10px;
+  width: 100%;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  &:hover {
+    background-color: #00730c;
+
+    .WP-card-icon-green {
+      display: none;
+    }
+
+    .WP-card-icon-white {
+      display: block;
+    }
+
+    h3 {
+      color: white;
+    }
+
+    p {
+      color: white;
+      opacity: 1;
+    }
+  }
+}
+
+.card-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  p {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: normal;
+    color: #e3e3e3;
+    opacity: 0.5;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.WP-card-icon-green {
+  display: block;
+}
+
+.WP-card-icon-white {
+  display: none;
+}
+
+// --------------------------------
+//--------Reliable-Gardening-------
+
+.Reliable-Gardening {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reliable-gardening-content {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("./picture/hand-holding-small-tree-planting-mob.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 225px;
+  border-radius: 5px;
+}
+
+.RG-content-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    width: 90%;
+    color: white;
+  }
+}
+
+.RG-button {
+  padding: 10px 0;
+  width: 38%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+
+  p {
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 700;
+    color: #00730c;
+  }
+}
+
+.RG-button-icon {
+  background-image: url(./icons/phone-green.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
 //------------------
 // >768 - Table
 //------------------

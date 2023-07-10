@@ -110,5 +110,57 @@
     }
   }
 
+  //--------------------------------
+  //--------Working-Process----------
+
+  .WP-card {
+    width: 48%;
+  }
+
+  // --------------------------------
+  //--------Reliable-Gardening-------
+
+  .reliable-gardening-content {
+    background-image: url("./picture/hand-holding-small-tree-planting.png");
+    height: 250px;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 30px;
+  }
+
+  .RG-content-blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .RG-button {
+    padding: 10px 0;
+    width: 38%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+
+    p {
+      font-family: Nunito;
+      font-size: 14px;
+      font-weight: 700;
+      color: #00730c;
+    }
+  }
+
+  .RG-button-icon {
+    background-image: url(./icons/phone-green.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+
   // -------------------------------------------
 }
