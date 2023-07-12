@@ -915,6 +915,124 @@ h3 {
 .OTS-display2 {
   display: none;
 }
+//-------------------------
+//------Clients-Saying-----
+
+.Clients-Saying {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.CS-background-green {
+  position: absolute;
+  width: 100%;
+  height: 87%;
+  background-color: #e6f6ea;
+  z-index: -100;
+}
+
+.CS-content {
+  width: 90%;
+  padding-top: 50px;
+
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  span {
+    color: #00730c;
+  }
+}
+
+.CS-text-block {
+  margin-bottom: 40px;
+
+  p {
+    text-align: center;
+  }
+}
+
+.CS-comments-block {
+}
+
+.CS-comment-card {
+  background-color: white;
+  box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  img {
+    width: 136px;
+    height: 183px;
+  }
+}
+
+.CS-card-content {
+  @include textStandartMobile;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 15px;
+  background-image: url("./icons/quotation-mark.svg");
+  background-repeat: no-repeat;
+}
+
+.CS-card-content-mark {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CS-card-content-mark-name {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  p {
+    color: #676767;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.CS-card-content-mark-stars {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.CS-star {
+  background-image: url("./icons/Star.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+// ----Slick-slider----
+
+.CS-comments-block .slick-list {
+  overflow: visible;
+}
+
+.CS-comments-block .slick-slide {
+  margin: 0 10px;
+}
 
 //------------------
 // >768 - Table
