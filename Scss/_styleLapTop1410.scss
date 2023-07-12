@@ -423,6 +423,7 @@
   //--------Reliable-Gardening-------
 
   .reliable-gardening-content {
+    width: 80%;
     padding: 0 60px 0 0;
   }
 
@@ -437,7 +438,7 @@
   }
 
   .RG-button {
-    padding: 10px 35px;
+    padding: 10px;
     width: 40%;
     height: 50px;
 
@@ -449,6 +450,73 @@
   .RG-button-icon {
     width: 30px;
     height: 30px;
+  }
+
+  //--------------------------------
+  //-------Our-Trained-Staff--------
+
+  .Our-Trained-Staff {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .OTS-content {
+    width: 80%;
+
+    h2 {
+      text-align: left;
+      margin-bottom: 30px;
+      font-size: 45px;
+      font-weight: 800;
+    }
+  }
+
+  .OTS-content-description {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    margin-bottom: 50px;
+
+    p {
+      @include textStandartPC;
+      text-align: left;
+    }
+
+    button {
+      width: 40%;
+      @include button-standartPC;
+      padding: 13px 0;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .OTS-cards-block {
+    justify-content: space-between;
+  }
+
+  .OTS-card {
+    border-radius: 10px;
+  }
+
+  .OTS-card-text-block {
+    border-radius: 10px;
+    padding: 10px 0;
+
+    h3 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .OTS-display2 {
+    display: flex;
   }
 
   // -------------------------------------------

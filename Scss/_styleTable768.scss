@@ -162,5 +162,24 @@
     height: 20px;
   }
 
+  //--------------------------------
+  //-------Our-Trained-Staff--------
+
+  .OTS-content-description {
+    button {
+      width: 35%;
+    }
+  }
+
+  .OTS-cards-block {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .OTS-display1 {
+    display: flex;
+  }
+
   // -------------------------------------------
 }
