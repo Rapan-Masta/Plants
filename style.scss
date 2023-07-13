@@ -954,15 +954,20 @@ h3 {
 
   p {
     text-align: center;
+    @include textStandartMobile;
   }
 }
 
 .CS-comments-block {
 }
 
+.CS-slider-buttons {
+  display: none;
+}
+
 .CS-comment-card {
   background-color: white;
-  box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+  box-shadow: 2px 11px 10px 0px rgba(51, 51, 51, 0.08);
   padding: 20px;
   width: 50%;
   display: flex;
@@ -976,13 +981,16 @@ h3 {
 }
 
 .CS-card-content {
-  @include textStandartMobile;
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding-top: 15px;
   background-image: url("./icons/quotation-mark.svg");
   background-repeat: no-repeat;
+
+  p {
+    @include textStandartMobile;
+  }
 }
 
 .CS-card-content-mark {
@@ -1027,7 +1035,7 @@ h3 {
 // ----Slick-slider----
 
 .CS-comments-block .slick-list {
-  overflow: visible;
+  padding-bottom: 20px;
 }
 
 .CS-comments-block .slick-slide {

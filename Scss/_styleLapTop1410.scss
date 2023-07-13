@@ -519,5 +519,149 @@
     display: flex;
   }
 
+  //-------------------------
+  //------Clients-Saying-----
+
+  .CS-content {
+    width: 80%;
+    padding-top: 100px;
+
+    h2 {
+      text-align: left;
+      margin-bottom: 30px;
+      font-size: 45px;
+      font-weight: 800;
+    }
+  }
+
+  .CS-text-block {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+      text-align: left;
+      width: 65%;
+      @include textStandartPC;
+    }
+  }
+
+  .CS-comments-block {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .CS-slider-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .CS-comment-card {
+    padding: 30px 25px;
+    flex-direction: row;
+    gap: 35px;
+
+    img {
+      width: 193px;
+      height: 276px;
+    }
+  }
+
+  .CS-card-content {
+    gap: 25px;
+    background-image: url("./icons/quotation-marks-orange.svg");
+    justify-content: center;
+
+    p {
+      @include textStandartPC;
+    }
+  }
+
+  .CS-card-content-mark-name {
+    gap: 5px;
+
+    h3 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .CS-star {
+    width: 25px;
+    height: 25px;
+  }
+
+  // ----Slick-slider----
+
+  .CS-comments-block .slick-track .slick-slide {
+    display: flex;
+  }
+
+  //-------Slick-slider-buttons--------
+  .CS-slider-buttons .slick-prev,
+  .CS-slider-buttons .slick-next {
+    position: static;
+    transform: none;
+    width: auto;
+    height: auto;
+
+    border: 1px solid #00730c;
+    border-radius: 5px;
+    padding: 10px 13px;
+
+    &:hover {
+      background-color: #00730c;
+    }
+  }
+
+  .CS-slider-buttons .slick-prev,
+  .CS-slider-buttons .slick-next {
+    &::before {
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30px;
+      height: 30px;
+
+      font-size: 0;
+      opacity: 1;
+    }
+  }
+
+  .CS-slider-buttons .slick-prev {
+    &::before {
+      background-image: url("./icons/Slick-slider-arrow/arrow-left-green.svg");
+    }
+  }
+
+  .CS-slider-buttons .slick-prev {
+    &:hover {
+      &::before {
+        background-image: url("./icons/Slick-slider-arrow/arrow-left-white.svg");
+      }
+    }
+  }
+  .CS-slider-buttons .slick-next {
+    &::before {
+      background-image: url("./icons/Slick-slider-arrow/arrow-right-green.svg");
+    }
+  }
+
+  .CS-slider-buttons .slick-next {
+    &:hover {
+      &::before {
+        background-image: url("./icons/Slick-slider-arrow/arrow-right-white.svg");
+      }
+    }
+  }
+
   // -------------------------------------------
 }
