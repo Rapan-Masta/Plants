@@ -963,6 +963,103 @@ h3 {
   margin: 0 10px;
 }
 
+.Asked-Questions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.AQ-content {
+  width: 90%;
+}
+
+.AQ-main-content {
+  text-align: center;
+}
+.AQ-main-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.AQ-main-content span {
+  color: #00730c;
+}
+.AQ-main-content p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+  margin-bottom: 40px;
+}
+
+.AQ-buttons-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.AQ-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 3px;
+  background-color: #fff8f1;
+  color: black;
+  width: 100%;
+  padding: 12px 15px;
+  cursor: pointer;
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s, background-image 0.3s;
+}
+.AQ-button.AQ-active-botton {
+  background-color: #00730c;
+  color: white;
+}
+.AQ-button.AQ-active-botton .AQ-button-status {
+  background-image: url("./icons/Frequently-Asked-Questions/minus-white.svg");
+}
+
+.AQ-button-status {
+  display: block;
+  background-image: url("./icons/Frequently-Asked-Questions/plus-black.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+}
+
+.AQ-text-from-button {
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s, height 0.3s;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+}
+.AQ-text-from-button.visible {
+  opacity: 1;
+  height: auto;
+}
+
+.AQ-meme-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.AQ-img {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .Solution {
     flex-direction: row-reverse;
@@ -1098,6 +1195,9 @@ h3 {
   }
   .OTS-display1 {
     display: flex;
+  }
+  .AQ-meme-img {
+    width: 70%;
   }
 }
 @media (min-width: 1410px) {
@@ -1646,5 +1746,57 @@ h3 {
   }
   .CS-slider-buttons .slick-next:hover::before {
     background-image: url("./icons/Slick-slider-arrow/arrow-right-white.svg");
+  }
+  .AQ-content {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .AQ-main-content {
+    text-align: left;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .AQ-img {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+  .AQ-img img {
+    width: 100%;
+  }
+  .AQ-main-content h2 {
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  .AQ-main-content p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #676767;
+  }
+  .AQ-button {
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .AQ-button-status {
+    height: 28px;
+    width: 28px;
+  }
+  .AQ-text-from-button {
+    font-size: 18px;
+    line-height: 30px;
+    color: #676767;
+    padding: 0 30px;
+  }
+  .AQ-meme-img {
+    width: 80%;
+    height: auto;
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
