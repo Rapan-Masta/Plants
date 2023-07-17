@@ -682,13 +682,13 @@
   }
 
   .AQ-img {
-    display: flex;
-    justify-content: center;
     width: 30%;
-
-    img {
-      width: 100%;
-    }
+    height: 100%;
+    background-image: url("./picture/AQ-GardenMan.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
   }
 
   .AQ-main-content {
@@ -725,6 +725,149 @@
     width: 80%;
     height: auto;
     display: flex;
+  }
+
+  //------------------------------
+  //----------CompanyLogos-------
+
+  .CL-content {
+    justify-content: space-between;
+
+    img {
+      width: 202px;
+      height: 100px;
+    }
+  }
+
+  .CL-img-display2 {
+    display: block;
+  }
+
+  //--------------------------------
+  //--------Solutions-Garden--------
+
+  .SG-content-block {
+    padding: 30px 100px;
+    border-radius: 10px;
+    gap: 0;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 45px;
+    }
+
+    button {
+      @include button-standartPC;
+      width: 20%;
+      padding: 13px 0;
+      font-size: 18px;
+    }
+  }
+
+  //-----------------------------
+  //---------footer--------------
+
+  .footerContent {
+    align-items: center;
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 80px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .footer-top-section {
+    width: 80%;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+
+  .footer-subscribe-to-newsletter {
+    display: block;
+    width: 30%;
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  .subscribe-text-block {
+    input {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .subscribe-icons-block {
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .subscribe-icon-style {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-useful-links {
+    width: 25%;
+  }
+
+  .footer-links-blocks {
+    width: 100%;
+
+    div {
+      width: 50%;
+    }
+
+    p {
+      gap: 5px;
+
+      &::before {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  .footer-popular-sevices {
+    margin-bottom: 0;
+    width: 18%;
+  }
+
+  .footer-bottom-section {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+
+    p {
+      margin: 0;
+    }
+
+    div {
+      width: 20%;
+
+      p {
+        font-size: 16px;
+      }
+    }
   }
 
   // -------------------------------------------
