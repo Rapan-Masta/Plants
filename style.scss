@@ -860,7 +860,7 @@ h3 {
 }
 
 .OTS-card {
-  width: 345px;
+  width: 100%;
   border-radius: 5px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -892,6 +892,9 @@ h3 {
     linear-gradient(1deg, #00730c 0.01%, rgba(251, 246, 238, 0) 98.84%)
   );
   padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   h3 {
     font-size: 18px;
@@ -907,6 +910,47 @@ h3 {
     color: white;
     text-align: center;
   }
+
+  &:hover {
+    height: 100%;
+    .OTS-card-text-block-icons {
+      display: flex;
+    }
+  }
+}
+
+.OTS-card-text-block-icons {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto;
+  gap: 15px;
+}
+
+.OTS-icon-style {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+}
+
+.OTS-icon1 {
+  background-image: url("./icons/Our-Trained-Staff/Google.svg");
+}
+.OTS-icon2 {
+  background-image: url("./icons/Our-Trained-Staff/facebook.svg");
+}
+.OTS-icon3 {
+  background-image: url("./icons/Our-Trained-Staff/twitter.svg");
+}
+.OTS-icon4 {
+  background-image: url("./icons/Our-Trained-Staff/pinterest.svg");
+}
+.OTS-icon5 {
+  background-image: url("./icons/Our-Trained-Staff/in.svg");
 }
 
 .OTS-display1 {
