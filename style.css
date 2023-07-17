@@ -1499,16 +1499,35 @@ h3 {
     margin-right: 10%;
   }
   .Nb-content-text div {
+    cursor: pointer;
     display: flex;
     align-items: center;
   }
-  .down-arrow-black {
+  .Nb-content-text div:after {
+    content: "+";
+    font-size: 0;
+    display: block;
     background-image: url("./icons/arrow-icon-black.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 12px;
     height: 6.84px;
     margin-left: 5px;
+  }
+  .Nb-content-text div:hover {
+    color: #00730c;
+  }
+  .Nb-content-text div:hover:after {
+    background-image: url("./icons/arrow-icon-green.svg");
+  }
+  .Nb-content-text div:last-child:after {
+    content: none;
+  }
+  .Nb-content-text .div {
+    cursor: pointer;
+  }
+  .Nb-content-text .div:hover {
+    color: #00730c;
   }
   .call-us {
     font-family: Nunito;

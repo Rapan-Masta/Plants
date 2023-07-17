@@ -79,18 +79,43 @@
     margin-right: 10%;
 
     div {
+      cursor: pointer;
       display: flex;
       align-items: center;
+
+      &:after {
+        content: "+";
+        font-size: 0;
+        display: block;
+        background-image: url("./icons/arrow-icon-black.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 12px;
+        height: 6.84px;
+        margin-left: 5px;
+      }
+
+      &:hover {
+        color: #00730c;
+
+        &:after {
+          background-image: url("./icons/arrow-icon-green.svg");
+        }
+      }
+
+      &:last-child {
+        &:after {
+          content: none;
+        }
+      }
     }
   }
 
-  .down-arrow-black {
-    background-image: url("./icons/arrow-icon-black.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 12px;
-    height: 6.84px;
-    margin-left: 5px;
+  .Nb-content-text .div {
+    cursor: pointer;
+    &:hover {
+      color: #00730c;
+    }
   }
 
   .call-us {
