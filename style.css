@@ -1061,9 +1061,13 @@ h3 {
   display: none;
 }
 
+.Insights-Articles {
+  display: none;
+}
+
 .CompanyLogos {
   width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 175px;
   display: flex;
   justify-content: center;
 }
@@ -2023,6 +2027,9 @@ h3 {
     width: 80%;
     height: auto;
     display: flex;
+  }
+  .CompanyLogos {
+    margin-bottom: 200px;
   }
   .CL-content {
     justify-content: space-between;
